@@ -1,0 +1,327 @@
+{
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "tailwindCSS.classAttributes": ["class", "ui"],
+  "tailwindCSS.experimental.classRegex": [
+    ["ui:\\s*{([^)]*)\\s*}", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ],
+
+  "editor.formatOnSave": false,
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false,
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "never",
+    "source.fixAll.eslint": "always"
+  },
+
+
+  "workbench.colorCustomizations": {
+    "welcomePage.background": "#0f172a",
+
+    // Editor colors
+    "editor.background": "#0f172a", // Darker background for editor (subtle contrast)
+    "editor.foreground": "#e2e8f0", // Lighter text color for better readability
+    "editor.selectionBackground": "#374151", // Slightly lighter selection highlight
+    "editor.lineHighlightBackground": "#1e293b", // Current line highlight with softer tone
+    "editor.lineHighlightBorder": "#334155",
+    "editorCursor.foreground": "#fb7185", // Bright cursor color
+
+    "editorGroupHeader.tabsBorder": "#fb7185",
+    "editorIndentGuide.background1": "#475569",
+    "editorIndentGuide.activeBackground1": "#94a3b8",
+
+    "editorLineNumber.foreground": "#64748b",
+    "editorLineNumber.activeForeground": "#fb7185",
+
+    "breadcrumb.background": "#020617",
+    "breadcrumb.activeSelectionForeground": "#fb7185",
+    "breadcrumb.focusForeground": "#fb7185",
+    "breadcrumbPicker.background": "#0f172a",
+
+    "widget.shadow": "#475569",
+    "scrollbar.shadow": "#475569",
+    "editorStickyScroll.shadow": "#475569",
+    "listFilterWidget.shadow": "#475569",
+    "panelStickyScroll.shadow": "#475569",
+    "sideBarStickyScroll.shadow": "#475569",
+
+    // Status bar (bottom bar) colors
+    "statusBar.background": "#020617", // Darker background for status bar
+    "statusBar.border": "#1e293b", // Subtle border around status bar
+    "statusBar.focusBorder": "#be123c",
+    "titleBar.activeBackground": "#020617", // Active title bar (matches status bar)
+    "titleBar.border": "#334155", // Title bar border
+
+    // SideBar
+    "sideBar.background": "#0f172a", // Darker sidebar background
+    "sideBar.border": "#1e293b", // Border color for sidebar
+
+    "settings.dropdownBackground": "#1e293b",
+    "settings.dropdownBorder": "#334155",
+    "settings.headerForeground": "#fb7185",
+    "settings.modifiedItemIndicator": "#fb7185",
+    "settings.textInputBackground": "#1e293b",
+    "settings.checkboxBackground": "#1e293b",
+    "settings.numberInputBackground": "#1e293b",
+    "settings.rowHoverBackground": "#334155",
+
+    "scrollbarSlider.background": "#fb7185",
+    "scrollbarSlider.hoverBackground": "#f43f5e",
+    "scrollbarSlider.activeBackground": "#f43f5e",
+    // Panels (Terminal, Problems)
+    "panel.background": "#0f172a", // Dark background for panels (Terminal, Problems)
+    "panel.border": "#1e293b", // Panel border
+
+    // Button colors
+    "button.background": "#be123c", // Bright pink for buttons
+    "button.border": "#f43f5e", // Border color for buttons
+    "button.foreground": "#ffe4e6", // Text color for buttons
+    "button.hoverBackground": "#f43f5e", // Darker shade for button hover state
+    "button.secondaryBackground": "#1e293b",
+    "button.secondaryForeground": "#f43f5e",
+    "textLink.foreground": "#22c55e",
+    "textLink.activeForeground": "#34d399",
+
+    // Badge colors
+    "badge.background": "#334155", // Badge background color
+    "badge.foreground": "#e2e8f0", // Badge text color
+
+    // Activity Bar (Left Sidebar)
+    "activityBar.background": "#020617", // Dark background for activity bar
+    "activityBar.foreground": "#f43f5e", // Soft blue-gray for inactive icons
+    "activityBar.inactiveForeground": "#64748b", // Slightly darker color for inactive icons
+    "activityBar.activeBorder": "#f43f5e", // Bright border for active item (focus)
+    "activityBar.border": "#1e293b", // Activity bar border color
+    "activityBarBadge.background": "#be123c", // Highlight activity bar badge (active)
+    "activityBarBadge.foreground": "#ffe4e6",
+
+    "focusBorder": "#f43f5e",
+
+    // Editor Tabs (Top Tabs)
+    "tab.activeBackground": "#0f172a", // Dark background for active tabs
+    "tab.inactiveBackground": "#0f172a", // Dark background for inactive tabs (subtle)
+    "tab.hoverBackground": "#020617",
+    "tab.activeForeground": "#e2e8f0", // Light text for active tabs
+    "tab.inactiveForeground": "#94a3b8", // Lighter text for inactive tabs
+    "tab.border": "#334155", // Border color between tabs
+    "tab.activeBorderTop": "#f43f5e", // Active tab top border with accent color
+
+    "menu.background": "#0f172a",
+    "menu.border": "#1e293b",
+    "menu.foreground": "#e2e8f0",
+    "menu.selectionBackground": "#f43f5e",
+    "menu.separatorBackground": "#1e293b",
+
+    // Additional UI enhancements
+    "editorGroupHeader.noTabsBackground": "#1e293b", // Header background when no tabs are present
+    "editorGroupHeader.tabsBackground": "#121d2b", // Header background when tabs are present
+    "editorGroup.border": "#1e293b", // Border between editor groups
+
+    "panelTitle.activeBorder": "#be123c", // Border color for active panel title
+    "list.hoverBackground": "#1e293b", // Hover background color in list elements (files, search results)
+    "list.activeSelectionBackground": "#374151", // Background for active list item selection
+    "list.inactiveSelectionBackground": "#2d3748", // Inactive list item selection background
+
+    "editor.foldBackground": "#1e293b"
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "keyword",
+        "settings": {
+          "foreground": "#ec4899", // Pink for keywords
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": "keyword.control",
+        "settings": {
+          "foreground": "#fb7185", // Purple for control keywords (if, for, while, etc.)
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": "keyword.operator",
+        "settings": {
+          "foreground": "#fbbf24" // Yellow for operators (+, -, &&, etc.)
+        }
+      },
+      {
+        "scope": "string",
+        "settings": {
+          "foreground": "#fb923c", // Orange for strings
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "string.quoted",
+        "settings": {
+          "foreground": "#fb923c" // Slightly darker orange for quoted strings
+        }
+      },
+      {
+        "scope": "variable",
+        "settings": {
+          "foreground": "#fb7185" // Light red/pink for variables
+        }
+      },
+      {
+        "scope": "variable.other.local",
+        "settings": {
+          "foreground": "#22d3ee" // Aqua for local variables
+        }
+      },
+      {
+        "scope": "variable.other.global",
+        "settings": {
+          "foreground": "#a3e635" // Green for global variables
+        }
+      },
+      {
+        "scope": "variable.parameter",
+        "settings": {
+          "foreground": "#fb7185" // Purple for function parameters
+        }
+      },
+      {
+        "scope": "variable.other",
+        "settings": {
+          "foreground": "#93c5fd" // Light blue for other variables
+        }
+      },
+      {
+        "scope": "constant",
+        "settings": {
+          "foreground": "#eab308" // Yellow for constants
+        }
+      },
+      {
+        "scope": "constant.numeric",
+        "settings": {
+          "foreground": "#10b981" // Green for numeric constants
+        }
+      },
+      {
+        "scope": "constant.language",
+        "settings": {
+          "foreground": "#f43f5e" // Red for language constants (e.g., `true`, `false`)
+        }
+      },
+      {
+        "scope": "comment",
+        "settings": {
+          "foreground": "#6b7280", // Gray for comments
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "comment.block.documentation",
+        "settings": {
+          "foreground": "#9ca3af", // Lighter gray for documentation comments
+          "fontStyle": "italic underline"
+        }
+      },
+      {
+        "scope": "punctuation",
+        "settings": {
+          "foreground": "#6b7280" // Gray for punctuation marks
+        }
+      },
+      {
+        "scope": "storage",
+        "settings": {
+          "foreground": "#d1d5db" // Light gray for storage keywords (e.g., `let`, `const`, `var`)
+        }
+      },
+      {
+        "scope": "storage.type",
+        "settings": {
+          "foreground": "#f472b6" // Light purple for type storage (e.g., `function`, `class`, `type`)
+        }
+      },
+      {
+        "scope": "entity.name.function",
+        "settings": {
+          "foreground": "#f87171", // Blue for function names
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": "entity.name.class",
+        "settings": {
+          "foreground": "#8b5cf6" // Light purple for class names
+        }
+      },
+      {
+        "scope": "entity.name.type",
+        "settings": {
+          "foreground": "#ec4899" // Blue for types (interfaces, types, etc.)
+        }
+      },
+      {
+        "scope": "support.function",
+        "settings": {
+          "foreground": "#10b981" // Green for support functions
+        }
+      },
+      {
+        "scope": "support.constant",
+        "settings": {
+          "foreground": "#eab308" // Yellow for support constants
+        }
+      },
+      {
+        "scope": "support.type",
+        "settings": {
+          "foreground": "#d946ef" // Purple for support types
+        }
+      }
+    ]
+  },
+  "cSpell.words": [
+    "akar",
+    "autoresize",
+    "Contanier",
+    "Daraz",
+    "dashicons",
+    "defu",
+    "ecommerce",
+    "heroicons",
+    "hugeicons",
+    "iconify",
+    "influencers",
+    "kbds",
+    "localtime",
+    "lucide",
+    "mingcute",
+    "mynaui",
+    "Noimage",
+    "Nuxt",
+    "nuxthub",
+    "nuxtjs",
+    "ofetch",
+    "passwordless",
+    "pilcrow",
+    "Pinterest",
+    "placholder",
+    "replit",
+    "Shoppable",
+    "Slideover",
+    "successmsg",
+    "tiktok",
+    "tiptap",
+    "typcn",
+    "unixepoch",
+    "Unknow",
+    "unovis",
+    "uuidv",
+    "variantswarn",
+    "vueuse",
+    "Wishlisted"
+  ]
+}

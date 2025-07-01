@@ -1,0 +1,69 @@
+@import 'tailwindcss';
+@import '@nuxt/ui-pro';
+
+
+:root {
+  --ui-active: var(--ui-color-neutral-300);
+  --ui-header-height: --spacing(16);
+  --ui-container: 100rem;
+}
+.dark{
+  --ui-active: var(--ui-color-neutral-800)
+}
+
+input::-ms-reveal,
+input::-ms-clear {
+  display: none;
+}
+
+
+.prose h1 {
+  @apply mb-8 text-4xl font-bold;
+}
+.prose h2 {
+  @apply mb-6 text-2xl font-bold;
+}
+.prose h3 {
+  @apply mb-3 text-xl font-bold;
+}
+.prose h4 {
+  @apply mb-2 text-lg font-bold;
+}
+.prose h5 {
+  @apply mb-2 text-base font-bold;
+}
+.prose h6 {
+  @apply mb-2 text-sm font-bold;
+}
+
+
+.prose ol {
+  @apply list-decimal ps-6 my-5
+}
+
+.prose ul {
+  @apply list-disc ps-6 my-5 marker:text-(--ui-border-accented)
+}
+
+
+.prose li {
+  @apply my-1.5 ps-1.5 leading-7 [&>ul]:my-0
+}
+
+.prose pre {
+  @apply font-mono text-sm/6 border border-muted bg-muted rounded-md px-4 py-3 whitespace-pre-wrap break-words overflow-x-auto focus:outline-none
+}
+
+.prose code {
+  @apply px-1.5 py-0.5 text-sm font-mono font-medium rounded-md inline-block
+}
+
+
+.prose blockquote {
+  @apply border-s-4 border-accented ps-4 italic
+}
+
+
+.prose hr {
+  @apply border-t border-default my-4
+}

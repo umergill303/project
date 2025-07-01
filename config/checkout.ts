@@ -1,0 +1,121 @@
+import { UInput, USelect, UCheckbox } from '#components'
+
+export const checkoutFields = [
+  {
+    name: 'name',
+    label: 'Full Name',
+    component: UInput,
+    placeholder: 'John Doe',
+    icon: 'i-lucide-user',
+    autocomplete: 'name',
+    required: true,
+    class: 'col-span-1 md:col-span-3  lg:col-span-3',
+  },
+  {
+    name: 'email',
+    label: 'Email Address',
+    component: UInput,
+    type: 'email',
+    placeholder: 'your@email.com',
+    icon: 'i-lucide-mail',
+    autocomplete: 'email',
+    required: true,
+    class: 'col-span-1 md:col-span-3  lg:col-span-3',
+  },
+
+  {
+    name: 'phone',
+    label: 'Phone Number',
+    component: UInput,
+    type: 'tel',
+    placeholder: '+1 (555) 123-4567',
+    icon: 'i-lucide-phone',
+    autocomplete: 'tel',
+    required: true,
+    class: 'col-span-1 md:col-span-3  lg:col-span-3',
+  },
+  {
+    name: 'country',
+    label: 'Country',
+    component: UInput,
+    placeholder: 'Select country',
+    icon: 'i-lucide-globe',
+    autocomplete: 'country',
+    readonly: true,
+    required: true,
+    class: 'col-span-1 md:col-span-3  lg:col-span-3',
+  },
+
+  {
+    name: 'province',
+    label: 'Province/State',
+    component: UInput,
+    placeholder: 'California',
+    icon: 'i-lucide-map',
+    autocomplete: 'address-level1',
+    required: true,
+    class: 'col-span-1 md:col-span-2',
+  },
+  {
+    name: 'district',
+    label: 'District',
+    component: UInput,
+    placeholder: 'Manhattan',
+    icon: 'i-lucide-map-pin',
+    required: true,
+    class: 'col-span-1 md:col-span-2',
+  },
+  {
+    name: 'city',
+    label: 'City',
+    component: UInput,
+    placeholder: 'New York',
+    icon: 'i-lucide-building-2',
+    autocomplete: 'address-level2',
+    required: true,
+    class: 'col-span-1 md:col-span-2',
+  },
+
+  {
+    name: 'address',
+    label: 'Street Address',
+    component: UInput,
+    placeholder: '123 Main St',
+    icon: 'streamline:street-road',
+    autocomplete: 'street-address',
+    required: true,
+    class: 'col-span-1 md:col-span-2',
+  },
+  {
+    name: 'locate',
+    label: 'Location Type',
+    component: USelect,
+    placeholder: 'Select location type',
+    icon: 'i-lucide-house',
+    items: [
+      { value: 'home', label: 'Home' },
+      { value: 'work', label: 'Work' },
+      { value: 'other', label: 'Other' }
+    ],
+    required: true,
+    class: 'col-span-1 md:col-span-2',
+  },
+  {
+    name: 'code',
+    label: 'Postal Code',
+    component: UInput,
+    placeholder: '10001',
+    icon: 'i-lucide-credit-card',
+    autocomplete: 'postal-code',
+    required: true,
+    class: 'col-span-1 md:col-span-2',
+  },
+
+  {
+    name: 'agree',
+    component: UCheckbox,
+    des: 'I have read and agree to the Terms and Conditions',
+    class: 'col-span-full',
+    required: true
+  }
+]

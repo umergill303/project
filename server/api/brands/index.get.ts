@@ -1,0 +1,3 @@
+export default defineEventHandler(async () => {
+  return await useDb().select().from(tables.brands).all()
+})
